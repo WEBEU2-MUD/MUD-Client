@@ -25,8 +25,8 @@ const Info = styled.div`
 
 const Controls = styled.div`
   display: grid;
-  grid-template-columns: 60px 60px 60px;
-  grid-template-rows: 60px 60px;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   padding-bottom: 20px;
@@ -87,9 +87,8 @@ function Game({ location, setLocation }) {
       <Info>
         <h1>You are in: {location.title}</h1>
         <p>{location.description}</p>
-        
       </Info>
-      <Room />
+      <Room location={location} moving={moving}/>
       <Controls direction={moving}>
         <div></div>
         <div>
