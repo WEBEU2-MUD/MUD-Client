@@ -14,5 +14,9 @@ export const api = {
     init: async () => {
         const result = await AxiosAuth.get('/api/adv/init');
         return result.data;
+    },
+    move: async (direction) => {
+        const result = await AxiosAuth.post('/api/adv/move/', { direction });
+        return result.data;
     }
 }
