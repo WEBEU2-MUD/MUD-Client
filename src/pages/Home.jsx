@@ -25,7 +25,6 @@ function Home() {
   const init = async () => {
     try {
       const data = await api.init();
-      console.log(data)
       setLocation(data);
       setName(data.name);
     } catch (err) {
@@ -42,8 +41,6 @@ function Home() {
     init();
   }, []);
 
-  console.log(location, name);
-
   if (!location) {
     return <Container>Loading</Container>;
   }
@@ -51,8 +48,6 @@ function Home() {
   if (!loggedIn) {
     return <Redirect to="login" />;
   }
-
-  console.log(location)
 
   return (
     <Container>
