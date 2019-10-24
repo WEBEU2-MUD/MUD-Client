@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://lambda-mud-test.herokuapp.com';
+export const BASE_URL = 'https://csbw-be.herokuapp.com';
