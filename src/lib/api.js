@@ -3,6 +3,7 @@ import { BASE_URL } from './config';
 
 const ls = window.localStorage.getItem('token');
 
+
 const AxiosAuth = Axios.create({
     baseURL: BASE_URL,
     headers: {

@@ -118,7 +118,7 @@ function Login() {
         password1: password,
         password2
       });
-      window.localStorage.setItem('token', JSON.stringify(result.data.key));
+      localStorage.setItem('token', JSON.stringify(result.data.key));
       setLoading(false);
       setLoggedIn(true);
     } catch (err) {
