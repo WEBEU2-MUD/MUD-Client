@@ -28,12 +28,13 @@ function Home() {
       setLocation(data);
       setName(data.name);
     } catch (err) {
-      console.log(err);
+      localStorage.removeItem("token");
+      setLoggedIn(false);
     }
   };
 
   const logOut = () => {
-    window.localStorage.removeItem("token");
+    localStorage.removeItem("token");
     setLoggedIn(false);
   };
 
