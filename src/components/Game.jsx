@@ -8,7 +8,7 @@ const GameContainer = styled.div`
   padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

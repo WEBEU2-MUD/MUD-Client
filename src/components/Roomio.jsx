@@ -14,6 +14,10 @@ const Canvas = styled.canvas`
   background: #000;
 `;
 
+const GameWrapper = styled.div`
+  display: relative;
+`;
+
 const Scores = styled.div`
   display: flex;
   width: 300px;
@@ -32,7 +36,7 @@ const Score = styled.div`
 `;
 
 const Crash = styled.div`
-  position: fixed;
+  position: absolute;
   border: 1px solid #c5c5c5;
   height: 500px;
   width: 800px;
@@ -322,10 +326,12 @@ function Roomio({ location, clickHandler, moving }) {
         <Score>Score: {Math.floor(score)}</Score>
         <Score>High score: {highScore}</Score>
       </Scores>
-      {dead && <Crash>You Crashed</Crash>}
-      {moving && <Crash>Moving</Crash>}
+      <GameWrapper>
+        {dead && <Crash>You Crashed</Crash>}
+        {moving && <Crash>Moving</Crash>}
 
-      <Canvas ref={canvasRef} width={800} height={500}></Canvas>
+        <Canvas ref={canvasRef} width={800} height={500}></Canvas>
+      </GameWrapper>
     </div>
   );
 }

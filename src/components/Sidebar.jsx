@@ -1,13 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
+const Side = styled.div`
+  min-height: 100vh;
+  width: 300px;
+`;
+
 const SideContainer = styled.div`
-  position: relative;
+  position: fixed;
+  top: 0;
   box-sizing: border-box;
   width: 300px;
-  height: 100vh;
+  min-height: 100vh;
   border-right: 1px solid #c5c5c5;
+  align-self: flex-start;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   padding: 20px;
 
@@ -65,6 +73,7 @@ const Players = styled.div`
 
 function SideBar({ name, location, logOut }) {
   return (
+    <Side>
     <SideContainer>
       <User>
         <Avatar>{name[0] && name[0].toUpperCase()}</Avatar>
@@ -80,6 +89,7 @@ function SideBar({ name, location, logOut }) {
       </Players>
       <button onClick={logOut}>Log Out</button>
     </SideContainer>
+    </Side>
   );
 }
 
