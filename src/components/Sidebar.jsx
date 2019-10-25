@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import P5Wrapper from 'react-p5-wrapper';
+import sketch from '../lib/sketch';
+
 
 const Side = styled.div`
   min-height: 100vh;
@@ -87,6 +90,13 @@ function SideBar({ name, location, logOut }) {
             })}
         </div>
       </Players>
+      <div style={{position: 'absolute',
+        bottom: '80px',
+        right: '52px'}}>
+          <P5Wrapper 
+      sketch={sketch} />
+        </div>
+      
       <button onClick={logOut}>Log Out</button>
     </SideContainer>
     </Side>
