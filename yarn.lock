@@ -6322,15 +6322,10 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-"lodash@>=3.5 <5", lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.5:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
-
-lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+"lodash@>=3.5 <5", lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.21, lodash@^4.17.5:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loglevel@^1.4.1:
   version "1.6.1"
@@ -7230,6 +7225,16 @@ p-try@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.0.0.tgz#85080bb87c64688fa47996fe8f7dfbe8211760b1"
   integrity sha512-hMp0onDKIajHfIkdRk3P4CdCmErkYAxxDtP3Wx/4nZ3aGlau2VKh3mZpcuFkH27WQkL/3WBCPOktzA9ZOAnMQQ==
+
+p5@^0.10.2:
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/p5/-/p5-0.10.2.tgz#9437b28e803b9c8a94383c6b5f4d05b13603e1cc"
+  integrity sha512-kZnC7JllCEnEUTB3sv2iETUg1ulNvB60h3MHb63u7W/nCJc3XIlMGXcKk28cuezdQ7TOlKScm0qmWCsol+302Q==
+
+p5@^1.1.9:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/p5/-/p5-1.3.1.tgz#7a6021bf2a42974cef71501c56e5b2120f5a2de1"
+  integrity sha512-g7W2htgEwiAEGcl0WHccAJKbunUJwrUojUSR9+KihphJ33p5VpDdh1K8pDx4ppYjOr/lVEXaZ1XXDj27nwlNOg==
 
 pako@~1.0.5:
   version "1.0.8"
@@ -8469,6 +8474,13 @@ react-motion@^0.5.2:
     performance-now "^0.2.0"
     prop-types "^15.5.8"
     raf "^3.1.0"
+
+react-p5-wrapper@^2.0.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/react-p5-wrapper/-/react-p5-wrapper-2.4.0.tgz#2df23d37c0e0c04fd7625cd60ed06f0f3e74a423"
+  integrity sha512-dyhbtCrN5+WAnI7BUuX+VkTpcrtNs7RWTB9OAX2gEeLmp+s8o6OCXLddVvHjIr8CHj3ZPwX8vM9gVzvcYv8OvA==
+  dependencies:
+    p5 "^1.1.9"
 
 react-router-dom@^5.1.2:
   version "5.1.2"
